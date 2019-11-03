@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
   imports: [
     BrowserModule,
     ScrollingModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
