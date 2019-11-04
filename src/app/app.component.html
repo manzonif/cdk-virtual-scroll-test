@@ -1,12 +1,5 @@
-<div class="wide-container">
-  <div class="container">
-    <h3>Virtual Scroll Example</h3>
+  <cdk-virtual-scroll-viewport itemSize="50" minBufferPx="200" maxBufferPx="400"
+  class="example-viewport">
+  <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
+  </cdk-virtual-scroll-viewport>
 
-    <ng-scrollbar class="virtual-scroll" thumbClass="white-scrollbars">
-      <cdk-virtual-scroll-viewport scrollViewport itemSize="50" class="example-viewport">
-        <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
-      </cdk-virtual-scroll-viewport>
-    </ng-scrollbar>
-
-  </div>
-</div>
